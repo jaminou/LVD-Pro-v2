@@ -1,0 +1,101 @@
+import { ElementDef } from './types';
+
+export const ELEMENTS: ElementDef[] = [
+  // ═══ ALARM ═══
+  { id: 'alarm_panel', name: 'Alarm Control Panel', shortName: 'ACP', category: 'alarm' },
+  { id: 'keypad', name: 'Alarm Keypad', shortName: 'AKP', category: 'alarm' },
+  { id: 'pir', name: 'PIR Motion Detector', shortName: 'PIR', category: 'alarm' },
+  { id: 'pir360', name: '360° PIR Detector', shortName: 'PIR360', category: 'alarm' },
+  { id: 'outdoor_motion', name: 'Outdoor Motion Detector', shortName: 'OMD', category: 'alarm' },
+  { id: 'door_contact', name: 'Door Contact', shortName: 'DC', category: 'alarm' },
+  { id: 'glass_break', name: 'Glass Break Detector', shortName: 'GBD', category: 'alarm' },
+  { id: 'shatter', name: 'Shatter Sensor', shortName: 'SHT', category: 'alarm' },
+  { id: 'vibration', name: 'Vibration Sensor', shortName: 'VIB', category: 'alarm' },
+  { id: 'flood', name: 'Flood Sensor', shortName: 'FLD', category: 'alarm' },
+  { id: 'siren_in', name: 'Internal Siren', shortName: 'SIR-I', category: 'alarm' },
+  { id: 'siren_out', name: 'External Siren', shortName: 'SIR-E', category: 'alarm' },
+  { id: 'panic', name: 'Panic Button', shortName: 'PB', category: 'alarm' },
+
+  // ═══ FIRE ═══
+  { id: 'fire_panel', name: 'Fire Alarm Panel', shortName: 'FAP', category: 'fire' },
+  { id: 'fire_keypad', name: 'Fire Keypad', shortName: 'FKP', category: 'fire' },
+  { id: 'smoke_2w', name: 'Smoke Detector (2-Wire)', shortName: 'SD-2W', category: 'fire' },
+  { id: 'smoke_4w', name: 'Smoke Detector (4-Wire)', shortName: 'SD-4W', category: 'fire' },
+  { id: 'heat', name: 'Heat Detector', shortName: 'HD', category: 'fire' },
+  { id: 'co', name: 'CO Detector', shortName: 'CO', category: 'fire' },
+  { id: 'pull_station', name: 'Pull Station / MCP', shortName: 'MCP', category: 'fire' },
+  { id: 'fire_bell', name: 'Fire Bell', shortName: 'FB', category: 'fire' },
+  { id: 'fire_strobe', name: 'Fire Strobe', shortName: 'FSTR', category: 'fire' },
+  { id: 'strobe_light', name: 'Strobe Light', shortName: 'STR', category: 'fire' },
+  { id: 'strobe_siren', name: 'Strobe + Siren', shortName: 'SS', category: 'fire' },
+  { id: 'annunciator', name: 'Annunciator Panel', shortName: 'ANN', category: 'fire' },
+  { id: 'duct', name: 'Duct Detector', shortName: 'DD', category: 'fire' },
+
+  // ═══ FIRE SPRINKLER (F.Sprk) ═══
+  { id: 'sprinkler_head', name: 'Sprinkler Head', shortName: 'SPR', category: 'sprinkler' },
+  { id: 'concealed_head', name: 'Concealed Sprinkler', shortName: 'CSPR', category: 'sprinkler' },
+  { id: 'sidewall_head', name: 'Sidewall Sprinkler', shortName: 'SSPR', category: 'sprinkler' },
+  { id: 'sprinkler_pump', name: 'Sprinkler Pump', shortName: 'PUMP', category: 'sprinkler' },
+  { id: 'flow_switch', name: 'Flow Switch', shortName: 'FLOW', category: 'sprinkler' },
+  { id: 'tamper_switch', name: 'Tamper Switch', shortName: 'TAMP', category: 'sprinkler' },
+  { id: 'fdc', name: 'Fire Dept Connection', shortName: 'FDC', category: 'sprinkler' },
+  { id: 'piv', name: 'Post Indicator Valve', shortName: 'PIV', category: 'sprinkler' },
+  { id: 'osy_valve', name: 'OS&Y Valve', shortName: 'OSY', category: 'sprinkler' },
+  { id: 'check_valve', name: 'Check Valve', shortName: 'CHK', category: 'sprinkler' },
+  { id: 'drain_valve', name: 'Drain Valve', shortName: 'DRN', category: 'sprinkler' },
+  { id: 'inspector_test', name: 'Inspector Test', shortName: 'TEST', category: 'sprinkler' },
+
+  // ═══ CCTV ═══
+  { id: 'cam_dome', name: 'Dome Camera', shortName: 'CAM-D', category: 'cctv' },
+  { id: 'cam_bullet', name: 'Bullet Camera', shortName: 'CAM-B', category: 'cctv' },
+  { id: 'cam_ptz', name: 'PTZ Camera', shortName: 'CAM-P', category: 'cctv' },
+  { id: 'cam_doorbell', name: 'Video Doorbell', shortName: 'VDB', category: 'cctv' },
+  { id: 'cam_pan', name: 'Pan Camera (180°)', shortName: 'CAM-180', category: 'cctv' },
+  { id: 'cam_ring', name: 'Ring/Doorbell Cam', shortName: 'RING', category: 'cctv' },
+  { id: 'nvr', name: 'NVR/DVR', shortName: 'NVR', category: 'cctv' },
+
+  // ═══ SOUND ═══
+  { id: 'spk_ceiling', name: 'Ceiling Speaker', shortName: 'SPK-C', category: 'sound' },
+  { id: 'spk_wall', name: 'Wall Speaker', shortName: 'SPK-W', category: 'sound' },
+  { id: 'spk_outdoor', name: 'Outdoor Speaker', shortName: 'SPK-O', category: 'sound' },
+  { id: 'spk_center', name: 'Center Channel', shortName: 'CTR', category: 'sound' },
+  { id: 'subwoofer', name: 'Subwoofer', shortName: 'SUB', category: 'sound' },
+  { id: 'amplifier', name: 'Amplifier', shortName: 'AMP', category: 'sound' },
+  { id: 'volume', name: 'Volume Control', shortName: 'VOL', category: 'sound' },
+  { id: 'soundbar', name: 'Soundbar', shortName: 'SBAR', category: 'sound' },
+  { id: 'media_player', name: 'Media Player', shortName: 'MPL', category: 'sound' },
+  { id: 'receiver', name: 'AV Receiver', shortName: 'AVR', category: 'sound' },
+  { id: 'spk_selector', name: 'Speaker Selector', shortName: 'SEL', category: 'sound' },
+
+  // ═══ AUTOMATION ═══
+  { id: 'smart_switch', name: 'Smart Switch', shortName: 'SW', category: 'automation' },
+  { id: 'smart_dimmer', name: 'Smart Dimmer', shortName: 'DIM', category: 'automation' },
+  { id: 'smart_lock', name: 'Smart Lock', shortName: 'LOCK', category: 'automation' },
+  { id: 'smart_outlet', name: 'Smart Outlet', shortName: 'OUT', category: 'automation' },
+  { id: 'thermostat', name: 'Smart Thermostat', shortName: 'THERM', category: 'automation' },
+  { id: 'hub', name: 'Smart Hub/Controller', shortName: 'HUB', category: 'automation' },
+  { id: 'shades', name: 'Motorized Shade', shortName: 'SHADE', category: 'automation' },
+  { id: 'touch_panel', name: 'Touch Panel', shortName: 'TP', category: 'automation' },
+  { id: 'auto_keypad', name: 'Automation Keypad', shortName: 'AKP', category: 'automation' },
+  { id: 'ir_emitter', name: 'IR Emitter', shortName: 'IR', category: 'automation' },
+
+  // ═══ TV ═══
+  { id: 'tv_outlet', name: 'TV Outlet', shortName: 'TV', category: 'tv' },
+  { id: 'hdmi_outlet', name: 'HDMI Outlet', shortName: 'HDMI', category: 'tv' },
+  { id: 'projector', name: 'Projector', shortName: 'PROJ', category: 'tv' },
+  { id: 'screen', name: 'Projection Screen', shortName: 'SCR', category: 'tv' },
+  { id: 'media_box', name: 'Media Box / STB', shortName: 'MBX', category: 'tv' },
+
+  // ═══ DATA / NETWORK ═══
+  { id: 'rj45', name: 'RJ45 Data Outlet', shortName: 'RJ45', category: 'data' },
+  { id: 'phone', name: 'Telephone Outlet', shortName: 'TEL', category: 'data' },
+  { id: 'sip_phone', name: 'SIP Phone', shortName: 'SIP', category: 'data' },
+  { id: 'wifi_ap', name: 'WiFi Access Point', shortName: 'AP', category: 'data' },
+  { id: 'outdoor_ap', name: 'Outdoor Access Point', shortName: 'OAP', category: 'data' },
+  { id: 'net_switch', name: 'Network Switch', shortName: 'NSW', category: 'data' },
+  { id: 'patch_panel', name: 'Patch Panel', shortName: 'PP', category: 'data' },
+  { id: 'server_rack', name: 'Server Rack', shortName: 'RACK', category: 'data' },
+  { id: 'ups', name: 'UPS', shortName: 'UPS', category: 'data' },
+  { id: 'bridge', name: 'Network Bridge', shortName: 'BRG', category: 'data' },
+  { id: 'fiber_outlet', name: 'Fiber Outlet', shortName: 'FBR', category: 'data' },
+];
